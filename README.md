@@ -19,9 +19,9 @@ The main advantages of this are : <br>
 <li>This model has strong transfer capability and can handle a number of different tasks at a time.</li>
 <li>The model accelerates the transfer learning speed (total steps cost) to make it roughly 10 times faster compared to RNN-based models in most scenarios.</li>
 </ol>
-The left side of the figure is the Qmix mixer arcchitecture as shown in paper[2].
+The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 
-
+# Result and Inference :
 
 
 
