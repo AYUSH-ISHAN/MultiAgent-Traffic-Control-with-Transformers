@@ -8,7 +8,7 @@ As said before the enviroment which I have used is a custom build environemnt of
 
 <p align="center"><img src="./assets/traffic.gif" height = "400" width="800"/></p>
 
-In this project I have kept number of agent = **10** and diffulty as **medium**. One can change the difficulty and number of agents <a href="">here (add link to file here)<a/>.
+In this project I have kept number of agent = **10** and difficulty as **medium**. One can change the difficulty and number of agents <a href="">here (add link to file here)<a/>.
 
 # Model Architecture
 
