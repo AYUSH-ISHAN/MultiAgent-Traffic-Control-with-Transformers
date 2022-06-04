@@ -21,7 +21,7 @@ The main advantages of this are : <br>
 <li>This model has strong transfer capability and can handle a number of different tasks at a time.</li>
 <li>The model accelerates the transfer learning speed (total steps cost) to make it roughly 10 times faster compared to RNN-based models in most scenarios.</li>
 </ol>
-The left side of the figure is the Qmix mixer architecture as shown in paper[2]. The QMix can be replaced by other networks like QTRAN, VDN and IQL. But in some researches we found QMix to outperform these listed models, so, I used the Qmix out of all options. 
+The left side of the figure is the Qmix mixer architecture as shown in paper[2]. The QMix can be replaced by other networks like COMA, QTRAN, VDN and IQL. But in some researches we found QMix to outperform these listed models, so, I used the Qmix out of all options. 
 
 # Result and Inference :
 
