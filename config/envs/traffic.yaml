@@ -1,0 +1,22 @@
+env: traffic
+
+env_args:
+    N_AGENTS :  10
+    N_ACTIONS:  2
+    EPISODE_LEN :  50
+    OBS_LEN :  22
+    ENV_SEED: 1
+    DIM: 14
+    VISION: 1
+    ADD_RATE_MIN: 1
+    ADD_RATE_MAX :  1
+    CURR_START: 0
+    CURR_END :  0
+    REACH_REWARD:  20
+    # if CURR_START == CURR_END:
+    #     CURRICULUM: False
+    # else:
+    #     CURRICULUM: True
+    CURRICULUM: False
+    DIFFICULTY: 'medium'  # easy|medium|hard
+    VOCAB_TYPE: 'scalar'  # bool|scalar
