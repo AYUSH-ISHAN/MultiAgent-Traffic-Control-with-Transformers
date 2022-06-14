@@ -25,7 +25,20 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 
 # Result and Inference :
 
-
+<table align="center">
+  <tr>
+  <th>Episode Mean Rewards</th>
+  <td><img src=""/><td>
+  </tr>
+  <tr>
+  <th>Episode Mean Win rates</th>
+  <td><img src=""/><td>
+  </tr>
+  <tr>
+  <th>Episode Mean No. of Collisions</th>
+  <td><img src=""/><td>
+  </tr>
+</table>
 
 pass
 
