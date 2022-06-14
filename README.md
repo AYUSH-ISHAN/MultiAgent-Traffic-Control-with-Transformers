@@ -27,15 +27,15 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 
 <table align="center">
   <tr>
-  <th>Episode Mean Rewards</th>
+  <td><B>Episode Mean Rewards</B></td>
   <td><img src=""/><td>
   </tr>
   <tr>
-  <th>Episode Mean Win rates</th>
+  <td><B>Episode Mean Win rates</B></td>
   <td><img src=""/><td>
   </tr>
   <tr>
-  <th>Episode Mean No. of Collisions</th>
+  <td><B>Episode Mean No. of Collisions</B></td>
   <td><img src=""/><td>
   </tr>
 </table>
