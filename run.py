@@ -210,7 +210,7 @@ def run_sequential(args, logger):
                 #"results/models/{}".format(unique_token)
                 os.makedirs(save_path, exist_ok=True)
                 logger.console_logger.info("Saving models to {}".format(save_path))
-                print(f"epiode = {episode}")
+                print(f"episode = {episode}")
                 # learner should handle saving/loading -- delegate actor save/load to mac,
                 # use appropriate filenames to do critics, optimizer states
                 learner.save_models(save_path)
