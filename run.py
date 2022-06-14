@@ -120,7 +120,7 @@ def run_sequential(args, logger):
     learner = le_REGISTRY[args.learner](mac, buffer.scheme, logger, args)
 
     if args.use_cuda:
-        learner.cpu()
+        learner.cuda()
 
     if args.checkpoint_path != "":
 
@@ -192,8 +192,8 @@ def run_sequential(args, logger):
 
             # Execute test runs once in a while
             n_test_runs = max(1, args.test_nepisode // runner.batch_size)
-            if (runner.t_env - last_test_T) / args.test_interval >= 1.0:
-
+            # if (runner.t_env - last_test_T) / args.test_interval >= 1.0:
+            if episode % 1000 == 0:
                 logger.console_logger.info("t_env: {} / {}".format(runner.t_env, args.t_max))
                 logger.console_logger.info("Estimated time left: {}. Time passed: {}".format(
                     time_left(last_time, last_test_T, runner.t_env, args.t_max), time_str(time.time() - start_time)))
@@ -203,26 +203,28 @@ def run_sequential(args, logger):
                 for _ in range(n_test_runs):
                     runner.run(test_mode=True)
 
-            if args.save_model and ((runner.t_env - model_save_time)/args.t_max >= 1 or model_save_time == 0):
+            # if args.save_model and ((runner.t_env - model_save_time)/args.t_max >= 1 or model_save_time == 0):
+            if episode % 1000 == 0:
                 model_save_time = runner.t_env
                 save_path = os.path.join(args.local_results_path, "models", args.unique_token, str(runner.t_env))
                 #"results/models/{}".format(unique_token)
                 os.makedirs(save_path, exist_ok=True)
                 logger.console_logger.info("Saving models to {}".format(save_path))
-
+                print(f"epiode = {episode}")
                 # learner should handle saving/loading -- delegate actor save/load to mac,
                 # use appropriate filenames to do critics, optimizer states
                 learner.save_models(save_path)
             # print("hello !")
             # print(runner.t_env, last_log_T)
             episode += args.batch_size_run
-
-            if (runner.t_env - last_log_T)/args.t_max >= 1:
-                logger.log_stat("episode", episode, runner.t_env)
-                logger.print_recent_stats()
-                last_log_T = runner.t_env
+            logger.log_stat("episode", episode, runner.t_env)
+            # if (runner.t_env - last_log_T)/args.t_max >= 1:
+            #     logger.log_stat("episode", episode, runner.t_env)
+            #     logger.print_recent_stats()
+            #     last_log_T = runner.t_env
 
     runner.close_env()
+    learner.save_models(save_path)
     logger.console_logger.info("Finished Training")
 
 
