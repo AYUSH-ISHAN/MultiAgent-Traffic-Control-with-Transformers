@@ -50,12 +50,12 @@ pass
 
 # References :
 
-**[1]** <a href="https://arxiv.org/abs/2101.08001">UPDeT</a>: Universal Multi-agent Reinforcement Learning via Policy Decoupling with Transformers Siyi Hu, Fengda Zhu, Xiaojun Chang, Xiaodan Liang<br>
-**[2]** <a href="https://arxiv.org/abs/1803.11485">QMix</a>: QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning
+**[1]** Universal Multi-agent Reinforcement Learning via Policy Decoupling with Transformers Siyi Hu, Fengda Zhu, Xiaojun Chang, Xiaodan Liang<br>
+**[2]** QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning
 Tabish Rashid, Mikayel Samvelyan, Christian Schroeder de Witt, Gregory Farquhar, Jakob Foerster, Shimon Whiteson<br>
-**[3]** <a href="https://arxiv.org/abs/1705.08926">COMA<a/>: Counterfactual Multi-Agent Policy Gradients Jakob Foerster, Gregory Farquhar, Triantafyllos Afouras, Nantas Nardelli, Shimon Whiteson<br>
-**[4]** <a href="https://arxiv.org/abs/1905.05408">QTran</a>: QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning Kyunghwan Son, Daewoo Kim, Wan Ju Kang, David Earl Hostallero, Yung Yi<br>
-**[5]** <a href="https://arxiv.org/pdf/1903.04527.pdf">IQL</a>: Multi-Agent Deep Reinforcement Learning for Large-scale Traffic Signal Control Tianshu Chu, Jie Wang, Lara Codecà, and Zhaojian Li <br>
-**[6]** <a href="https://arxiv.org/abs/1706.05296">VDN<a/>: Value-Decomposition Networks For Cooperative Multi-Agent Learning Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel <br>
+**[3]** Counterfactual Multi-Agent Policy Gradients Jakob Foerster, Gregory Farquhar, Triantafyllos Afouras, Nantas Nardelli, Shimon Whiteson<br>
+**[4]** QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning Kyunghwan Son, Daewoo Kim, Wan Ju Kang, David Earl Hostallero, Yung Yi<br>
+**[5]** Multi-Agent Deep Reinforcement Learning for Large-scale Traffic Signal Control Tianshu Chu, Jie Wang, Lara Codecà, and Zhaojian Li <br>
+**[6]** Value-Decomposition Networks For Cooperative Multi-Agent Learning Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel <br>
 **[7]** Attention Is All You Need: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin <br>
 **[8]** Offline Pre-trained Multi-Agent Decision Transformer: One Big Sequence Model Tackles All SMAC Tasks Linghui Meng, Muning Wen, Yaodong Yang, Chenyang Le, Xiyun Li, Weinan Zhang, Ying Wen, Haifeng Zhang, Jun Wang, Bo Xu
