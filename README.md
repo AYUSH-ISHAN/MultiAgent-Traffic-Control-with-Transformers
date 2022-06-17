@@ -25,6 +25,9 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 
 # Result and Inference :
 
+## Baseline : DGN
+Include DGNs plot from folder 2, the best yet. 
+
 <table align="center">
   <tr>
   <td><B>Episode Mean Rewards</B></td>
