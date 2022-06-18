@@ -12,7 +12,7 @@ In this project I have kept number of agent = **10** and difficulty as **medium*
 
 # Model Architecture
 
-<p align="center"><img src="./assets/algo.jpg"/><br><em>Diagram representing the pipeline of the whole model used for training</em></p>
+<p align="center"><img src="./assets/algo.jpg" height = 300/><br><em>Diagram representing the pipeline of the whole model used for training</em></p>
 <br>
 The right part of he figure is the UPDeT algorithm which is a replacement of the traditional RNN/LSTM based base model. The main reason of this replacement is the advantages of transformers based model especially UPDET as compared to the RNN/LSTM based models as explained in the paper[1].<br>
 The main advantages of this are : <br>
