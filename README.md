@@ -65,4 +65,4 @@ Tabish Rashid, Mikayel Samvelyan, Christian Schroeder de Witt, Gregory Farquhar,
 **[6]** Value-Decomposition Networks For Cooperative Multi-Agent Learning Peter Sunehag, Guy Lever, Audrunas Gruslys, Wojciech Marian Czarnecki, Vinicius Zambaldi, Max Jaderberg, Marc Lanctot, Nicolas Sonnerat, Joel Z. Leibo, Karl Tuyls, Thore Graepel <br>
 **[7]** Attention Is All You Need: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin <br>
 **[8]** Offline Pre-trained Multi-Agent Decision Transformer: One Big Sequence Model Tackles All SMAC Tasks Linghui Meng, Muning Wen, Yaodong Yang, Chenyang Le, Xiyun Li, Weinan Zhang, Ying Wen, Haifeng Zhang, Jun Wang, Bo Xu<br>
-**[9]** GRAPH CONVOLUTIONAL REINFORCEMENT LEARNING Jiechuan Jiang1, Chen Dun2∗, Tiejun Huang1 & Zongqing Lu Peking University, 2Rice University
+**[9]** GRAPH CONVOLUTIONAL REINFORCEMENT LEARNING Jiechuan Jiang1, Chen Dun2∗, Tiejun Huang1 & Zongqing Lu Peking University, Rice University
