@@ -31,16 +31,21 @@ I have compared the results of the UPDET with a well known Multi Agent Communica
 
 <table align="center">
   <tr>
+    <td><B>Plot Type</B></td>
+    <td><B>DGN</B></td>
+    <td><B>UPDET</B></td>
+  </tr>
+  <tr>
   <td><B>Episode Mean Rewards</B></td>
-  <td><img src=""/><td>
+  <td><img src="./assets/dgn_r.png" height = "200" width = "200"/><td>
   </tr>
   <tr>
   <td><B>Episode Mean Win rates</B></td>
-  <td><img src=""/><td>
+  <td><img src="./assets/dgn_wr.png" height = "200" width = "200"/><td>
   </tr>
   <tr>
   <td><B>Episode Mean No. of Collisions</B></td>
-  <td><img src=""/><td>
+  <td><img src="./assets/dgn_nc.png" height = "200" width = "200"/><td>
   </tr>
 </table>
 
