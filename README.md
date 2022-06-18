@@ -25,8 +25,9 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 
 # Result and Inference :
 
-## Baseline : DGN
-Include DGNs plot from folder 2, the best yet. 
+## Baseline : 
+I have compared the results of the UPDET with a well known Multi Agent Communication algorithm - Graph convolutional reinforcement learning, namely <a href="https://arxiv.org/pdf/1810.09202.pdf">**DGN**</a>, is instantiated based on deep Q network and trained end-to-end. The main reason of using DGN are as follows : 
+  -
 
 <table align="center">
   <tr>
