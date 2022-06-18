@@ -31,21 +31,29 @@ I have compared the results of the UPDET with a well known Multi Agent Communica
  <p align="center"><em>Click on the images to Zoom In</em></p>
 <table align="center">
   <tr>
-    <td><B>Plot Type</B></td>
-    <td><B>DGN</B></td>
-    <td><B>UPDET</B></td>
+    <td align="center"><B>DGN</B></td>
+    <td align="center"><B>UPDET</B></td>
   </tr>
   <tr>
-  <td><B>Episode Mean Rewards</B></td>
-  <td><img src="./assets/dgn_r.png" height = "200" width = "300"/><td>
+    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
   </tr>
   <tr>
-  <td><B>Episode Mean Win rates</B></td>
-  <td><img src="./assets/dgn_wr.png" height = "200" width = "300"/><td>
+    <td align="center"><img src="./assets/dgn_r.png" height = "250" width = "400"/></td>
+    <td align="center"><img src="" height = "250" width = "400"/></td>
   </tr>
   <tr>
-  <td><B>Episode Mean No. of Collisions</B></td>
-  <td><img src="./assets/dgn_nc.png" height = "200" width = "300"/><td>
+    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/dgn_wr.png" height = "250" width = "400"/></td>
+    <td align="center"><img src="" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/dgn_nc.png" height = "250" width = "400"/></td>
+    <td align="center"><img src="" height = "250" width = "400"/></td>
   </tr>
 </table>
 
