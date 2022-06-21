@@ -29,7 +29,9 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 # Result and Inference :
 
 ## Baseline : 
-I have compared the results of the UPDET with a well known Multi Agent Communication algorithm - Graph convolutional reinforcement learning, namely <a href="https://arxiv.org/pdf/1810.09202.pdf">**DGN**</a>, is instantiated based on deep Q network and trained end-to-end. The main reason of using DGN is it's based on GNN (Graph Neural Networks and has Multi-Head Attention).
+I have compared the results of the UPDET with a well known Multi Agent Communication algorithm - Graph convolutional reinforcement learning, namely <a href="https://arxiv.org/pdf/1810.09202.pdf">**DGN**</a>, is instantiated based on deep Q network and trained end-to-end. The main reason of using DGN is it's based on GNN (Graph Neural Networks and has Multi-Head Attention).<br>
+
+For DGN codes, go to **DGN** folder.
   
  <p align="center"><em>Click on the images to Zoom In</em></p>
 <table align="center">
