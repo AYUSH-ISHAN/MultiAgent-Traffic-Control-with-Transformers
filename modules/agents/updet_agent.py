@@ -16,6 +16,9 @@ class UPDeT(nn.Module):
         return torch.zeros(1, self.args.emb).cpu()
 
     def forward(self, inputs, hidden_state, task_enemy_num, task_ally_num):
+        
+        hidden_state = 
+
         outputs, _ = self.transformer.forward(inputs, hidden_state, None)
         # first output for 6 action (no_op stop up down left right)
         q_basic_actions = self.q_basic(outputs[:, 0, :])
@@ -41,6 +44,17 @@ class UPDeT(nn.Module):
         q = q_basic_actions
 
         return q, h
+
+
+def get_adjacency_matrix(obs):
+    adj = np.zeros((n_ant, n_ant))
+    for agent in range(n_ant):
+        for i in range(agent):  # already other half is marked below in index
+                # print(agent, i)
+                if(((obs[agent][2]-obs[i][2])**2 +(obs[agent][3]-obs[i][3])**2) < 0.1):
+                    adj[agent][i] = 1
+                    adj[i][agent]=1
+    return adj
 
 class SelfAttention(nn.Module):
     def __init__(self, emb, heads=8, mask=False):
