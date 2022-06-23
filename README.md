@@ -1,5 +1,4 @@
-# Add DGNs code 
-
+# Instead of passing hidden layers in the Mask of Attention.. Pass the original mask of the env. 
 
 # MultiAgent Traffic Control Using Transformers
 
