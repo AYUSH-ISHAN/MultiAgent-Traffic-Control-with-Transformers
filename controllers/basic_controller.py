@@ -58,11 +58,11 @@ class BasicMAC:
 
         # transformer based agent
         else:
-            agent_inputs = self._build_inputs_transformer(ep_batch, t)
+            agent_inputs, raw_obs = self._build_inputs_transformer(ep_batch, t)
             # print(agent_inputs.shape)
             # print(self.hidden_states.shape)
             # print("Hidden before in ! ",self.hidden_states.shape)
-            agent_outs, self.hidden_states = self.agent(agent_inputs,
+            agent_outs, self.hidden_states = self.agent(agent_inputs,raw_obs,
                                                            self.hidden_states.reshape(-1, 1, self.args.emb),
                                                            self.args.enemy_num, self.args.ally_num)
             # print(agent_outs.shape)
@@ -85,7 +85,7 @@ class BasicMAC:
         self.agent.load_state_dict(other_mac.agent.state_dict())
 
     def cuda(self):
-        self.agent.cpu()
+        self.agent.cuda()
 
     def save_models(self, path):
         th.save(self.agent.state_dict(), "{}/agent.th".format(path))
@@ -120,8 +120,8 @@ class BasicMAC:
         arranged_obs = th.cat((raw_obs[:, :, -1:], raw_obs[:, :, :-1]), 2)
         reshaped_obs = arranged_obs.view(-1, 1 + (self.args.enemy_num - 1) + self.args.ally_num, self.args.token_dim)
         inputs.append(reshaped_obs)
-        inputs = th.cat(inputs, dim=1).cpu()
-        return inputs
+        inputs = th.cat(inputs, dim=1).cuda()
+        return inputs, raw_obs
 
     def _get_input_shape(self, scheme):
         input_shape = scheme["obs"]["vshape"]
