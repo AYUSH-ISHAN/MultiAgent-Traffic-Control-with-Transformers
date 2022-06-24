@@ -1,4 +1,6 @@
 # Instead of passing hidden layers in the Mask of Attention.. Pass the original mask of the env. 
+# above changes done, paste the code open in VS code in the server.
+
 
 # MultiAgent Traffic Control Using Transformers
 
