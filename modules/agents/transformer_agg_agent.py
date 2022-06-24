@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 import argparse
-
+import numpy as np
 
 class TransformerAggregationAgent(nn.Module):
     def __init__(self, input_shape, args):
@@ -13,9 +13,12 @@ class TransformerAggregationAgent(nn.Module):
 
     def init_hidden(self):
         # make hidden states on same device as model
-        return torch.zeros(1, self.args.emb).cpu()
+        return torch.zeros(1, self.args.emb).cuda()
 
-    def forward(self, inputs, hidden_state, task_enemy_num, task_ally_num):
+    def forward(self, inputs, raw_obs, hidden_state, task_enemy_num, task_ally_num):
+        hidden_state = get_adjacency_matrix(raw_obs) + torch.eye(10).cuda()
+        # hidden_state = torch.tensor(hidden_state)
+        hidden_state = hidden_state.reshape(-1, 1, self.args.emb)
         outputs, _ = self.transformer.forward(inputs, hidden_state, None)
 
         # last output for hidden state
@@ -24,6 +27,17 @@ class TransformerAggregationAgent(nn.Module):
         q = self.q_linear(q_agg)
 
         return q, h
+    
+
+def get_adjacency_matrix(obs):
+        adj = torch.zeros(10, 10).cuda()
+        for agent in range(10):
+            for i in range(agent):  # already other half is marked below in index
+                    # print(agent, i)
+                    if(((obs[agent][2]-obs[i][2])**2 +(obs[agent][3]-obs[i][3])**2) < 1):
+                        adj[agent][i] = 1
+                        adj[i][agent]=1
+        return adj
 
 
 class SelfAttention(nn.Module):
@@ -171,9 +185,9 @@ if __name__ == '__main__':
 
 
     # testing the agent
-    agent = TransformerAggregationAgent(None, args).cpu()
-    hidden_state = agent.init_hidden().cpu().expand(args.ally_num, 1, -1)
-    tensor = torch.rand(args.ally_num, args.ally_num+args.enemy_num, args.token_dim).cpu()
+    agent = TransformerAggregationAgent(None, args).cuda()
+    hidden_state = agent.init_hidden().cuda().expand(args.ally_num, 1, -1)
+    tensor = torch.rand(args.ally_num, args.ally_num+args.enemy_num, args.token_dim).cuda()
     q_list = []
     for _ in range(args.episode):
         q, hidden_state = agent.forward(tensor, hidden_state, args.ally_num, args.enemy_num)
