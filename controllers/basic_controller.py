@@ -59,15 +59,39 @@ class BasicMAC:
         # transformer based agent
         else:
             agent_inputs, raw_obs = self._build_inputs_transformer(ep_batch, t)
-            # print(agent_inputs.shape)
-            # print(self.hidden_states.shape)
-            # print("Hidden before in ! ",self.hidden_states.shape)
-            agent_outs, self.hidden_states = self.agent(agent_inputs,raw_obs,
-                                                           self.hidden_states.reshape(-1, 1, self.args.emb),
+            self.hidden_states = self.get_adjacency_matrix(raw_obs) + th.eye(10).cuda()
+             # hidden_state = torch.tensor(hidden_state, dtype=torch.double).cuda()
+            agent_outs, self.hidden_states = self.agent(agent_inputs,self.hidden_states.reshape(-1, 1, self.args.emb),
                                                            self.args.enemy_num, self.args.ally_num)
             # print(agent_outs.shape)
             # print("hello")
         return agent_outs.view(ep_batch.batch_size, self.n_agents, -1)
+
+
+    def get_adjacency_matrix(self, obs):
+        
+        for j in range(len(obs)):
+            adj = th.zeros(10, 10).cuda()
+            for agent in range(10):
+                for i in range(agent):  # already other half is marked below in index
+                        # print(agent, i)
+                        if(((obs[j][agent][2]-obs[j][i][2])**2 +(obs[j][agent][3]-obs[j][i][3])**2) < 1):
+                            adj[agent][i] = 1.0
+                            adj[i][agent]=1.0
+            if j == 0:
+                batch_adj = adj
+            elif j==1:
+                print("Hello")
+                # adj = th.reshape(adj, (1,10,10))
+                batch_adj = th.stack((batch_adj,adj), axis=0)
+            else:
+                print("Hi")
+                adj = th.reshape(adj, (1,10,10))
+                batch_adj = th.cat((batch_adj,adj), axis=0)
+
+            print(adj.shape)
+            print(batch_adj.shape)
+        return batch_adj
 
     def init_hidden(self, batch_size):
         if self.args.agent not in ['updet', 'transformer_aggregation']:
