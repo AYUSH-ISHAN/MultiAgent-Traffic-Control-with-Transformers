@@ -31,9 +31,59 @@ I have compared the results of the UPDET with a well known Multi Agent Communica
 
 For DGN codes, go to **DGN** folder.
   
- <p align="center"><em>Click on the images to Zoom In</em></p>
- 
- 
+ <p align="center"><em>The plots of UPDeT at left and right are using the hidden states as the masking in Self-Attentions for Transformers. (Click on the images to Zoom In)</em></p><br>
+
+<table align="left">
+  <tr>
+    <td align="center"><B>UPDeT</B></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "400"/></td>
+  </tr>
+</table>
+
+  
+<table align="right">
+  <tr>
+    <td align="center"><B>UPDeT</B></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "400"/></td>
+  </tr>
+</table>
+
+<p align="center"><em>The plots of UPDeT at left and right are using the self masking as the masking in Self-Attentions for Transformers. (Click on the images to Zoom In)</em></p>
+  
 <table align="center">
   <tr>
     <td align="center"><B>UPDeT</B></td>
@@ -58,6 +108,7 @@ For DGN codes, go to **DGN** folder.
   </tr>
 </table>
 
+ ## Comparision with DGN :
 
 <table align="center">
   <tr>
