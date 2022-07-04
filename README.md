@@ -30,8 +30,6 @@ The left side of the figure is the Qmix mixer architecture as shown in paper[2].
 I have compared the results of the UPDET with a well known Multi Agent Communication algorithm - Graph convolutional reinforcement learning, namely <a href="https://arxiv.org/pdf/1810.09202.pdf">**DGN**</a>, is instantiated based on deep Q network and trained end-to-end. The main reason of using DGN is it's based on GNN (Graph Neural Networks and has Multi-Head Attention).<br>
 
 For DGN codes, go to **DGN** folder.
-  
- <p align="center"><em>The plots of UPDeT at left and right are using the hidden states as the masking in Self-Attentions for Transformers. (Click on the images to Zoom In)</em></p><br>
 
 <table align="left">
   <tr>
@@ -58,7 +56,34 @@ For DGN codes, go to **DGN** folder.
 </table>
 
   
-<table align="right">
+<table align="center">
+  <tr>
+    <td align="center"><B>UPDeT</B></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "400"/></td>
+  </tr>
+</table>
+
+   
+<p align="center"><em>The plots of UPDeT at left and right are using the hidden states as the masking in Self-Attentions for Transformers. (Click on the images to Zoom In)</em></p><br>
+
+<table align="center">
   <tr>
     <td align="center"><B>UPDeT</B></td>
   </tr>
@@ -84,30 +109,6 @@ For DGN codes, go to **DGN** folder.
 
 <p align="center"><em>The plots of UPDeT at left and right are using the self masking as the masking in Self-Attentions for Transformers. (Click on the images to Zoom In)</em></p>
   
-<table align="center">
-  <tr>
-    <td align="center"><B>UPDeT</B></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "400"/></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "400"/></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "400"/></td>
-  </tr>
-</table>
-
  ## Comparision with DGN :
 
 <table align="center">
