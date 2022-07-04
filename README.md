@@ -32,34 +32,56 @@ I have compared the results of the UPDET with a well known Multi Agent Communica
 For DGN codes, go to **DGN** folder.
   
  <p align="center"><em>Click on the images to Zoom In</em></p>
+ 
+ 
+<table align="center">
+  <tr>
+    <td align="center"><B>UPDeT</B></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "400"/></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "400"/></td>
+  </tr>
+</table>
+
+
 <table align="center">
   <tr>
     <td align="center"><B>DGN</B></td>
-    <td align="center"><B>UPDET</B></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
   </tr>
   <tr>
     <td align="center"><img src="./assets/dgn_r.png" height = "250" width = "400"/></td>
-    <td align="center"><img src="" height = "250" width = "400"/></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
   </tr>
   <tr>
     <td align="center"><img src="./assets/dgn_wr.png" height = "250" width = "400"/></td>
-    <td align="center"><img src="" height = "250" width = "400"/></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
   </tr>
   <tr>
     <td align="center"><img src="./assets/dgn_nc.png" height = "250" width = "400"/></td>
-    <td align="center"><img src="" height = "250" width = "400"/></td>
   </tr>
 </table>
-
 
 
 
