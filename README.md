@@ -64,19 +64,19 @@ For DGN codes, go to **DGN** folder.
     <td align="center" colspan="2"><B>Episode Mean Rewards</B></td>
   </tr>
   <tr>
-    <td align="center"><img src="./assets/updet_r.png" height = "250" width = "350"/></td>
+    <td align="center"><img src="./assets/updet1_r.png" height = "250" width = "350"/></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><B>Episode Mean Win rates</B></td>
   </tr>
   <tr>
-    <td align="center"><img src="./assets/updet_wr.png" height = "250" width = "350"/></td>
+    <td align="center"><img src="./assets/updet1_wr.png" height = "250" width = "350"/></td>
   </tr>
   <tr>
     <td align="center" colspan="2"><B>Episode Mean No. of Collisions</B></td>
   </tr>
   <tr>
-    <td align="center"><img src="./assets/updet_nc.png" height = "250" width = "350"/></td>
+    <td align="center"><img src="./assets/updet1_nc.png" height = "250" width = "350"/></td>
   </tr>
 </table>
 
